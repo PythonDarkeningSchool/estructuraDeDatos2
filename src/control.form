@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="control">
+  <grid id="27dc6" binding="controlPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="700" height="400"/>
+    </constraints>
+    <properties>
+      <minimumSize width="500" height="300"/>
+      <opaque value="true"/>
+      <preferredSize width="800" height="300"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="58d32" binding="controlTabs">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="250"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="aaf99" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Add a Student"/>
+            </constraints>
+            <properties>
+              <preferredSize width="300" height="300"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="bcb50" class="javax.swing.JLabel" binding="studentNumber">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Current students: 0"/>
+                </properties>
+              </component>
+              <component id="4fb37" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Student Name"/>
+                </properties>
+              </component>
+              <component id="a6b0f" class="javax.swing.JTextField" binding="studentNameInput">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="6f7b9" class="javax.swing.JButton" binding="AddStudentClearButton">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Clear"/>
+                </properties>
+              </component>
+              <component id="6c1ae" class="javax.swing.JButton" binding="AddStudentEnterButton">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Enter"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="aa1d7" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Set Qualification"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="2af06" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Student"/>
+                </properties>
+              </component>
+              <component id="4dba1" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Qualification"/>
+                </properties>
+              </component>
+              <vspacer id="e808f">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="f877d" class="javax.swing.JComboBox" binding="setQualificationComboBox">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model/>
+                </properties>
+              </component>
+              <component id="6f7cb" class="javax.swing.JTextField" binding="setQualificationTextField">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="802bf" class="javax.swing.JButton" binding="setQualificationEnterButton">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Enter"/>
+                </properties>
+              </component>
+              <component id="34131" class="javax.swing.JButton" binding="setQualificationClearButton">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Clear"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="db8ae" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Get Qualification"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="98394" class="javax.swing.JButton" binding="getQualificationButton" default-binding="true">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Get Qualification"/>
+                </properties>
+              </component>
+              <component id="57184" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Student"/>
+                </properties>
+              </component>
+              <component id="543bc" class="javax.swing.JComboBox" binding="getQualificationComboBox">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="8242f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Qualification"/>
+                </properties>
+              </component>
+              <component id="e4eab" class="javax.swing.JLabel" binding="getQualificationLabel">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="25eb" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Show Students Qualifications"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="e2327" class="javax.swing.JTextArea" binding="studentsTextArea">
+                <constraints>
+                  <grid row="0" column="1" row-span="2" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="decec" class="javax.swing.JButton" binding="showQualificationsButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Show Qualifications (Find Method)"/>
+                </properties>
+              </component>
+              <component id="be9ff" class="javax.swing.JButton" binding="showOrderedQualificationsButton" default-binding="true">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Show Ordered Qualifications (Bubble Sort)"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
