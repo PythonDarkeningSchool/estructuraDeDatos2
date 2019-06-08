@@ -53,7 +53,6 @@ public class control {
         3 list the differences between both */
 
         int comboBoxCount = comboBox.getItemCount();
-        System.out.println(comboBoxCount);
         ArrayList<String> comboBoxTmpList=new ArrayList<>(); // 2 list
 
         for (int i = 0; i < comboBoxCount; i++) {
@@ -164,8 +163,24 @@ public class control {
             public void actionPerformed(ActionEvent e) {
                 String currentQualification = setQualificationTextField.getText();
                 if ( !  (currentQualification == null | currentQualification.isEmpty() ) ) {
+                    // Check if the input is a number
+                    try{
+                        Integer.parseInt(currentQualification);
+                    }
+                    catch (NumberFormatException error){
+                        JOptionPane.showMessageDialog(frame,
+                                "Only integers are allowed!",
+                                "Not an Integer",
+                                JOptionPane.ERROR_MESSAGE);
+                        // Clean the inputField
+                        setQualificationTextField.setText("");
+                        setQualificationTextField.requestFocus();
+                        return;
+                    }
+
                     // InputField is not empty
                     String currentStudent = setQualificationComboBox.getSelectedItem().toString();
+
 
                     // Check if the qualification is in range of 1-10
                     if ( Integer.parseInt(currentQualification) >= 1 && Integer.parseInt(currentQualification) <= 10) {
