@@ -116,7 +116,7 @@ The worst case is when the value is not in the list (or occurs only once at the 
 
 This proyect consist in two windows which are `login window` and `control window`
 
-### Login Window
+### Login Window
 
 This window has two tabs that they will be explained here
 
