@@ -4,7 +4,6 @@ import javax.swing.event.ChangeListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Hashtable;
 import java.util.Set;
 
@@ -156,6 +155,7 @@ public class control {
                         controlTabs.setSelectedIndex(0); // Return to Add student tab
                         cleanInput(studentNameInput); // Set focus on the only one input
                     }
+                    studentsTextArea.setEditable(false);
                 }
             }
         });

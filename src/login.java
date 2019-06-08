@@ -3,8 +3,6 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 import java.util.Hashtable;
 
 public class login {
@@ -30,8 +28,8 @@ public class login {
                     // dispose the current frame
                     frame.dispose();
                     // call to control frame
-                    control hola = new control();
-                    hola.createFrame();
+                    control administration = new control();
+                    administration.createFrame();
                 }
                 else if (users.get(userID) == "false") {
                     JOptionPane.showMessageDialog(frame, "The user entered is not active", "User inactive", JOptionPane.WARNING_MESSAGE);
