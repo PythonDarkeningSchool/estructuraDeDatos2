@@ -12,16 +12,16 @@
       - [Example](#example)
     + [Sequential search](#sequential-search)
       - [Example](#example-1)
-  * [How this proyect works?](#how-this-proyect-works-)
+  * [How this proyect works?](#how-this-proyect-works)
     + [Login Window](#login-window)
-      - [Login (Login Tab)](#login--login-tab-)
-      - [Login (Help Tab)](#login--help-tab-)
+      - [Login (Login Tab)](#login-login-tab)
+      - [Login (Help Tab)](#login-help-tab)
     + [Control Window](#control-window)
-      - [Add a Student (Tab)](#add-a-student--tab-)
-      - [Set Qualification (Tab)](#set-qualification--tab-)
-      - [Get Qualification (Tab)](#get-qualification--tab-)
-      - [Show Students Qualifications (Tab)](#show-students-qualifications--tab-)
-  * [How to run this proyect?](#how-to-run-this-proyect-)
+      - [Add a Student (Tab)](#add-a-student-tab)
+      - [Set Qualification (Tab)](#set-qualification-tab)
+      - [Get Qualification (Tab)](#get-qualification-tab)
+      - [Show Students Qualifications (Tab)](#show-students-qualifications-tab)
+  * [How to run this proyect?](#how-to-run-this-proyect)
   * [Collaborators](#collaborators)
 
 # Proyect School Control With Java
@@ -38,8 +38,8 @@ The purpose of this proyect is to have a simulation of a **School Control** with
 
 The following requirements are needed in order to build this project:
 
-- [Sequential search](https://github.com/PythonDarkeningSchool/estructuraDeDatos2/blob/master/src/control.java#L267-L280)
-- [Bubble sort](https://github.com/PythonDarkeningSchool/estructuraDeDatos2/blob/master/src/control.java#L284-L318)
+- :mag_right: ​[Sequential search](https://github.com/PythonDarkeningSchool/estructuraDeDatos2/blob/master/src/control.java#L267-L280)
+- :mag_right: ​[Bubble sort](https://github.com/PythonDarkeningSchool/estructuraDeDatos2/blob/master/src/control.java#L284-L318)
 - [Hashtable](https://github.com/PythonDarkeningSchool/estructuraDeDatos2/blob/master/src/control.java#L29)
 
 To see in which part of the code are being applied every single requirement click on the name of it.
@@ -223,6 +223,6 @@ java -jar proyect.jar
 
 ## Collaborators
 
-- Humberto Israel Perez Rodriguez
-- Victor Hugo Robles Aguayo
-- Juan Carlos Borunda
+- :bust_in_silhouette: ​Humberto Israel Perez Rodriguez
+- :bust_in_silhouette: ​Victor Hugo Robles Aguayo
+- :bust_in_silhouette: ​Juan Carlos Navarro Borunda
