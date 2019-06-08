@@ -63,7 +63,7 @@ In order to run this program you will need the following programs:
 
 You can imagine that on every step big bubbles float to the surface and stay there. At the step, when no bubble moves, sorting stops.
 
-#### Algorithm
+#### Algorithm
 
 The basic idea of Bubble Sort algorithm can be described as these steps:
 
@@ -82,7 +82,7 @@ The basic idea of Bubble Sort algorithm can be described as these steps:
 5. Bubble sort should be avoided in the case of large collections.
 6. It will not be efficient in the case of a reverse-ordered collection.
 
-### Hashtable
+### Hashtable
 
 This class implements a hash table, which maps keys to values. Any non-null object can be used as a key or as a value.
 To successfully store and retrieve objects from a hashtable, the objects used as keys must implement the hashCode method and the equals method.
@@ -116,11 +116,11 @@ The worst case is when the value is not in the list (or occurs only once at the 
 
 This proyect consist in two windows which are `login window` and `control window`
 
-### Login Window
+### Login Window
 
 This window has two tabs that they will be explained here
 
-#### Login (Login Tab)
+#### Login (Login Tab)
 
 In this tab the user will be able to login with a valid credentials
 
@@ -148,7 +148,7 @@ This tab as well has some features (*restrictions*), e.g:
 
 ![add-student-tab](img/add-student-tab.png)
 
-#### Set Qualification (Tab)
+#### Set Qualification (Tab)
 
 In this tab the user will be able to setup qualifications for the user in the **Hashtable**
 
