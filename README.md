@@ -38,8 +38,8 @@ The purpose of this proyect is to have a simulation of a **School Control** with
 
 The following requirements are needed in order to build this project:
 
-- :mag_right: ​[Sequential search](https://github.com/PythonDarkeningSchool/estructuraDeDatos2/blob/master/src/control.java#L267-L280)
-- :mag_right: ​[Bubble sort](https://github.com/PythonDarkeningSchool/estructuraDeDatos2/blob/master/src/control.java#L284-L318)
+- :mag_right: ​[Sequential search](https://github.com/PythonDarkeningSchool/estructuraDeDatos2/blob/master/src/control.java#L282-L295)
+- :mag_right: ​[Bubble sort](https://github.com/PythonDarkeningSchool/estructuraDeDatos2/blob/master/src/control.java#L299-L333)
 - [Hashtable](https://github.com/PythonDarkeningSchool/estructuraDeDatos2/blob/master/src/control.java#L29)
 
 To see in which part of the code are being applied every single requirement click on the name of it.
