@@ -339,6 +339,7 @@ public class control {
     public void createFrame(){
         frame.setContentPane(new control().controlPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null);
         frame.pack();
         frame.setVisible(true);
     }

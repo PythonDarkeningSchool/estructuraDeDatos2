@@ -82,6 +82,7 @@ public class login {
         //JFrame frame = new JFrame("login");
         frame.setContentPane(new login().loginPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null);
         frame.pack();
         frame.setVisible(true);
     }
