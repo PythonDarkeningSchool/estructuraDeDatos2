@@ -90,7 +90,7 @@ public class Inventory extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setIcon(new javax.swing.ImageIcon("/Users/hiperezr/code/github/estructuraDeDatos2/inventoryControl/icons/enter-key.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/inventory/enter-key.png"))); // NOI18N
         jButton1.setToolTipText("Login with the provided credentials");
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
@@ -117,7 +117,7 @@ public class Inventory extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setIcon(new javax.swing.ImageIcon("/Users/hiperezr/code/github/estructuraDeDatos2/inventoryControl/icons/broom.png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/inventory/broom.png"))); // NOI18N
         jButton4.setToolTipText("Clear all the inputs");
         jButton4.setBorder(null);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +129,7 @@ public class Inventory extends javax.swing.JFrame {
         loginStatus.setFont(new java.awt.Font("Apple Braille", 1, 24)); // NOI18N
         loginStatus.setText("Not Logged In!");
 
-        loginStatusIcon.setIcon(new javax.swing.ImageIcon("/Users/hiperezr/code/github/estructuraDeDatos2/inventoryControl/icons/login-lock.png")); // NOI18N
+        loginStatusIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/inventory/login-lock.png"))); // NOI18N
 
         labelLoginLegend.setFont(new java.awt.Font("Optima", 0, 18)); // NOI18N
 
@@ -218,7 +218,7 @@ public class Inventory extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setIcon(new javax.swing.ImageIcon("/Users/hiperezr/code/github/estructuraDeDatos2/inventoryControl/icons/add-db.png")); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/inventory/add-db.png"))); // NOI18N
         jButton6.setToolTipText("Add a new item");
         jButton6.setBorder(null);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -227,7 +227,7 @@ public class Inventory extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setIcon(new javax.swing.ImageIcon("/Users/hiperezr/code/github/estructuraDeDatos2/inventoryControl/icons/broom.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/inventory/broom.png"))); // NOI18N
         jButton3.setToolTipText("Clear all the inputs");
         jButton3.setBorder(null);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -309,7 +309,7 @@ public class Inventory extends javax.swing.JFrame {
             }
         });
 
-        jButton5.setIcon(new javax.swing.ImageIcon("/Users/hiperezr/code/github/estructuraDeDatos2/inventoryControl/icons/delete.png")); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/inventory/delete.png"))); // NOI18N
         jButton5.setToolTipText("Delete the item!");
         jButton5.setBorder(null);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -366,7 +366,7 @@ public class Inventory extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(inventoryTable);
 
-        updateInventoryButton.setIcon(new javax.swing.ImageIcon("/Users/hiperezr/code/github/estructuraDeDatos2/inventoryControl/icons/update.png")); // NOI18N
+        updateInventoryButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/inventory/update.png"))); // NOI18N
         updateInventoryButton.setToolTipText("Update table!");
         updateInventoryButton.setBorder(null);
         updateInventoryButton.setBorderPainted(false);
@@ -494,7 +494,7 @@ public class Inventory extends javax.swing.JFrame {
         String price = addItemPrice.getText();
         
         if(item.isEmpty() || qty.isEmpty() || price.isEmpty()){
-            final ImageIcon pencil = new ImageIcon("../icons/pencil.png");
+            final ImageIcon pencil = new ImageIcon("pencil.png");
 
             JOptionPane.showMessageDialog(null,
             "Fill out all the fields",
@@ -536,7 +536,7 @@ public class Inventory extends javax.swing.JFrame {
             inventory.remove(item);
             itemComboBox.removeItem(item);
 
-            final ImageIcon done = new ImageIcon("../icons/done.png");
+            final ImageIcon done = new ImageIcon("done.png");
 
             JOptionPane.showMessageDialog(null,
                 String.format("The item: (%s) was deleted successfully", item),
@@ -545,7 +545,7 @@ public class Inventory extends javax.swing.JFrame {
                 done);
         }
         catch(NullPointerException err){
-            final ImageIcon clean = new ImageIcon("../icons/clean.png");
+            final ImageIcon clean = new ImageIcon("clean.png");
 
             JOptionPane.showMessageDialog(null,
                 "There is not items to be deleted",
@@ -585,7 +585,7 @@ public class Inventory extends javax.swing.JFrame {
              }
         }
         else{
-            final ImageIcon collection = new ImageIcon("../icons/collection.png");
+            final ImageIcon collection = new ImageIcon("collection.png");
 
             JOptionPane.showMessageDialog(null,
             "Add some items to display this content",
@@ -603,7 +603,7 @@ public class Inventory extends javax.swing.JFrame {
     }//GEN-LAST:event_helpMenuActionPerformed
 
     private void helpMenuMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_helpMenuMenuSelected
-        final ImageIcon userManual = new ImageIcon("../icons/credentials.png");
+        final ImageIcon userManual = new ImageIcon("credentials.png");
         StringBuilder message = new StringBuilder();
         message.append("Valid credentials are:\n\n");
         message.append("userID: admin / password: admin\n");
@@ -619,7 +619,7 @@ public class Inventory extends javax.swing.JFrame {
     }//GEN-LAST:event_helpMenuMenuSelected
 
     private void authorsMenuMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_authorsMenuMenuSelected
-        final ImageIcon authors = new ImageIcon("../icons/happy-man.png");
+        final ImageIcon authors = new ImageIcon("happy-man.png");
         StringBuilder message = new StringBuilder();
         message.append("The authors for this proyect are:\n\n");
         message.append("1. Humberto Israel Perez Rodriguez\n");
@@ -655,7 +655,7 @@ public class Inventory extends javax.swing.JFrame {
     private void insertItem(String item, String qty, String price){
         
         if(inventory.containsKey(item)){
-            final ImageIcon duplicatedRecord = new ImageIcon("../icons/duplicated-record.png");
+            final ImageIcon duplicatedRecord = new ImageIcon("duplicated-record.png");
 
             JOptionPane.showMessageDialog(null,
                 String.format("The item: (%s) is already in the database", item),
@@ -671,7 +671,7 @@ public class Inventory extends javax.swing.JFrame {
                 inventory.put(item, new HashMap<>());
                 inventory.get(item).put("qty", Integer.parseInt(qty));
                 inventory.get(item).put("price", Float.parseFloat(price));
-                final ImageIcon recordInserted = new ImageIcon("../icons/record-inserted.png");
+                final ImageIcon recordInserted = new ImageIcon("record-inserted.png");
 
                 JOptionPane.showMessageDialog(null,
                     "Item successfully inserted",
@@ -695,7 +695,7 @@ public class Inventory extends javax.swing.JFrame {
             Integer.parseInt(qty);
         }
         catch(NumberFormatException err){
-            final ImageIcon wrongInt = new ImageIcon("../icons/incorrect-number.png");
+            final ImageIcon wrongInt = new ImageIcon("incorrect-number.png");
 
             JOptionPane.showMessageDialog(null,
                 "Only integers are accepted!",
@@ -711,7 +711,7 @@ public class Inventory extends javax.swing.JFrame {
             Float.parseFloat(price);
         }
         catch(NumberFormatException err){
-            final ImageIcon wrongFloat = new ImageIcon("../icons/incorrect-number.png");
+            final ImageIcon wrongFloat = new ImageIcon("incorrect-number.png");
 
             JOptionPane.showMessageDialog(null,
                 "Only integers & floats are accepted!",
@@ -790,7 +790,7 @@ public class Inventory extends javax.swing.JFrame {
     private void enableTabs(String user, String pass){
         
         if(user.isEmpty() || pass.isEmpty()){
-            final ImageIcon iconSuperman = new ImageIcon("../icons/google-forms.png");
+            final ImageIcon iconSuperman = new ImageIcon("google-forms.png");
 
             JOptionPane.showMessageDialog(null,
                 "All fields are required, fill them out",
@@ -802,7 +802,7 @@ public class Inventory extends javax.swing.JFrame {
         }
         
         
-        final ImageIcon loginUnlock = new ImageIcon("../icons/login-unlock.png");
+        final ImageIcon loginUnlock = new ImageIcon("login-unlock.png");
         
         // HASHTABLE USE
         if(users.containsKey(user)){
@@ -814,7 +814,7 @@ public class Inventory extends javax.swing.JFrame {
                     case "admin":
                         // Admin user
                         enableAdminTabs();
-                        final ImageIcon iconSuperman = new ImageIcon("../icons/superman.png");
+                        final ImageIcon iconSuperman = new ImageIcon("superman.png");
 
                         JOptionPane.showMessageDialog(null,
                             String.format("Successfully logged as: %s, now all tabs has been unlocked", user),
@@ -826,7 +826,7 @@ public class Inventory extends javax.swing.JFrame {
                         loginStatus.setText("Logged as Admin");
                         loginStatusIcon.setIcon(loginUnlock);
                         // Spiderman text
-                        final ImageIcon spidermanIcon = new ImageIcon("../icons/spidy-100.png");
+                        final ImageIcon spidermanIcon = new ImageIcon("spidy-100.png");
                         labelLoginIcon.setIcon(spidermanIcon);
                         labelLoginLegend.setText("A great power carries a great responsibility!!!");
                         
@@ -834,7 +834,7 @@ public class Inventory extends javax.swing.JFrame {
                     case "guest":
                         // Guest user
                         enableGuestTabs();
-                        final ImageIcon iconNormalUser = new ImageIcon("../icons/normal-user.png");
+                        final ImageIcon iconNormalUser = new ImageIcon("normal-user.png");
 
                         JOptionPane.showMessageDialog(null,
                             String.format("Successfully logged as: %s, some tabs has been locked", user),
@@ -853,7 +853,7 @@ public class Inventory extends javax.swing.JFrame {
             }
             else{
                 // Password does not match
-                final ImageIcon cloudAlert = new ImageIcon("../icons/cloud-alert.png");
+                final ImageIcon cloudAlert = new ImageIcon("cloud-alert.png");
                 JOptionPane.showMessageDialog(null, 
                 String.format("The password does not match", user),
                     "Wrong password",
@@ -865,7 +865,7 @@ public class Inventory extends javax.swing.JFrame {
         }
         else{
             // User not in database
-            final ImageIcon userNotInDatabase = new ImageIcon("../icons/id-not-verified-48.png");
+            final ImageIcon userNotInDatabase = new ImageIcon("id-not-verified-48.png");
             JOptionPane.showMessageDialog(null, 
             String.format("The user: (%s) is not in database", user),
                 "Invalid user",
