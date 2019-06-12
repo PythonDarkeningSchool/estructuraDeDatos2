@@ -619,6 +619,7 @@ public class Inventory extends javax.swing.JFrame {
     }//GEN-LAST:event_helpMenuMenuSelected
 
     private void authorsMenuMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_authorsMenuMenuSelected
+
         final ImageIcon authors = new ImageIcon("happy-man.png");
         StringBuilder message = new StringBuilder();
         message.append("The authors for this proyect are:\n\n");
